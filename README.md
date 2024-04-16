@@ -17,4 +17,13 @@ And page replacement algorithms:
 To create simulation data I wrote a simple function placed in process_generator.py file which creates processes. Every process has a duration time and await time to enter queue. To call the function you need three arguments: maximum process duration time, maximum process await time and the number of processes to place in the output file. The results are in the fcfs_sjf_simulation_input.txt.
 
 ### Algorithms implementation
-The simulation code is placed in fcfs_sjf_simulation.py. FCFS and SJF algorithms have separate functions. There is also a function that creates list of processes and every process is an object of Process class. To run the simulation it's necessary to input the argument as list of processes. To see algorithms performance differences
+The simulation code is placed in fcfs_sjf_simulation.py. FCFS and SJF algorithms have separate functions. There is also a function that creates list of processes and every process is an object of Process class. To run the simulation it's necessary to input the argument as list of processes. To see algorithms performance differences there is a file FCFS_SJF_plot.ipynb which creates a plot of avarage await time of all processes in each algorithm. This is how this plot looks like.
+
+
+<img src="https://github.com/kdPerkowski/CPU-Memory-Simulations/assets/82761466/29f4f06b-d86c-4aed-baa7-7241bff1142d" alt="drawing" width="400"/>
+
+The average await time was calculated with following formula:
+
+<img src="https://github.com/kdPerkowski/CPU-Memory-Simulations/assets/82761466/88663499-8199-4206-8956-d47ad3da65ba" alt="drawing" width="200"/>
+
+
